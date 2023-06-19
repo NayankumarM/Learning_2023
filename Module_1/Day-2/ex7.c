@@ -20,10 +20,10 @@ int main() {
     char str[100];
 
     printf("Enter a string to encode: ");
-    fgets(str, sizeof(str), stdin);
+    scanf("%s", str);
 
     encode(str);
-    printf("Encoded string: %s", str);
+    printf("Encoded string: %s\n", str);
 
     decode(str);
     printf("Decoded string: %s", str);
