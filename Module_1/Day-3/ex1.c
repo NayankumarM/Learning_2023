@@ -1,39 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 
-void printIncreasing(int n);
-void printSpaces(int n);
-void printDecreasing(int n);
-
-int main() {
-    int n;
-
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
-
-    for (int i = 1; i <= n; i++) {
-        printIncreasing(i);
-        printSpaces(2 * (n - i));
-        printDecreasing(i);
-        printf("\n");
-    }
-
-    return 0;
-}
-
-void printIncreasing(int n) {
-    for (int i = 1; i <= n; i++) {
-        printf("%d", i);
-    }
-}
-
-void printSpaces(int n) {
-    for (int i = 1; i <= n; i++) {
+int main()
+{
+  int i,j,k;
+  for(i=4;i>=1;i--)
+  {
+    for(j=1;j<=4;j++)
+    {
+      if(j<=i)
+        printf("%d",j);
+      else
         printf(" ");
     }
-}
-
-void printDecreasing(int n) {
-    for (int i = n; i >= 1; i--) {
-        printf("%d", i);
-    }
-}
+    for(j=4;j>=1;j--)
+    {
+      if(j<=i)
+        printf("%d",j);
+      else
+        printf(" ");
+    } 
+    printf("\n");
+  }
+  return 0;
+ }
